@@ -11,6 +11,9 @@ export default {
         secondary: "#F59E0B", // Custom Orange
         accent: "#14B8A6", // Custom Teal
       },
+      fontFamily:{
+        sora: ['Sora']
+      }
     },
   },
   plugins: [

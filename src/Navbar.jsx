@@ -2,11 +2,12 @@ import React from "react";
 import { Route } from "react-router-dom";
 import { LuShoppingCart } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
+import Banner from "./Banner";
 
 const Navbar = () => {
   return (
-    <div className="bg-primary text-white">
-      <div className="navbar  shadow-sm">
+    <div className="bg-primary text-white h-[600px] rounded-lg">
+      <div className="navbar w-10/12 mx-auto shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -58,11 +59,17 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="flex gap-3">
-          <LuShoppingCart></LuShoppingCart>
-          <CiHeart></CiHeart>
+          <div className="bg-white rounded-full p-1">
+          <LuShoppingCart className="text-black "></LuShoppingCart>
+          </div>
+          <div  className="bg-white rounded-full p-1">
+          <CiHeart className="text-black"></CiHeart>
+          </div>
           </div>
         </div>
       </div>
+      {/* banner */}
+      <Banner></Banner>
     </div>
   );
 };
