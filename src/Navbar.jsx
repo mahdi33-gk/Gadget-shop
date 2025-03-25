@@ -1,10 +1,12 @@
 import React from "react";
 import { Route } from "react-router-dom";
+import { LuShoppingCart } from "react-icons/lu";
+import { CiHeart } from "react-icons/ci";
 
 const Navbar = () => {
   return (
-    <div>
-      <div className="navbar bg-base-100 shadow-sm">
+    <div className="bg-primary text-white">
+      <div className="navbar  shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -55,7 +57,10 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <div className="flex gap-3">
+          <LuShoppingCart></LuShoppingCart>
+          <CiHeart></CiHeart>
+          </div>
         </div>
       </div>
     </div>
