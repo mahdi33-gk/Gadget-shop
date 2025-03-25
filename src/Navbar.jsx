@@ -60,10 +60,10 @@ const Navbar = () => {
         <div className="navbar-end">
           <div className="flex gap-3">
           <div className="bg-white rounded-full p-1">
-          <LuShoppingCart className="text-black "></LuShoppingCart>
+          <LuShoppingCart className="text-black font-thin cursor-pointer"></LuShoppingCart>
           </div>
           <div  className="bg-white rounded-full p-1">
-          <CiHeart className="text-black"></CiHeart>
+          <CiHeart className="text-black cursor-pointer"></CiHeart>
           </div>
           </div>
         </div>
