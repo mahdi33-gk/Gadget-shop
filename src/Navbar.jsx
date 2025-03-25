@@ -1,14 +1,9 @@
-import React from "react";
-import { NavLink, Route } from "react-router-dom";
-import { LuShoppingCart } from "react-icons/lu";
-import { CiHeart } from "react-icons/ci";
-import Banner from "./Banner";
-import Products from "./Products";
+import React from 'react';
 
 const Navbar = () => {
-  return (
-    <div className="bg-mainBg">
-      <div className="bg-primary text-white h-[600px] rounded-lg">
+    return (
+        <div>
+            <div className="bg-primary text-white h-[600px] rounded-lg">
       <div className="navbar w-10/12 mx-auto shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
@@ -49,7 +44,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-            <NavLink to={'/home'}>Home</NavLink>
+            <NavLink to={'./home'}>Home</NavLink>
             </li>
             <li>
               <a>Statistics</a>
@@ -70,15 +65,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* banner */}
-      <Banner></Banner>
-      <div className="w-10/12 mx-auto">
-        {/* produts */}
-        <Products></Products>
-      </div>
     </div>
-    </div>
-  );
+        </div>
+    );
 };
 
 export default Navbar;
