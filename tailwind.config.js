@@ -8,8 +8,10 @@ export default {
     extend: {
       colors: {
         primary: "rgb(149, 56, 226)", // Custom Blue
-        secondary: "#F59E0B", // Custom Orange
-        accent: "#14B8A6", // Custom Teal
+        textCl: "rgba(9, 8, 15, 0.6)", // Custom Orange
+        mainBg: "rgb(30, 30, 30)", // Custom Teal
+        mainBorder: "rgba(9, 8, 15, 0.1)", // Custom Teal
+        anotherBg: "rgba(9, 8, 15, 0.05)", // Custom Teal
       },
       fontFamily:{
         sora: ['Sora']

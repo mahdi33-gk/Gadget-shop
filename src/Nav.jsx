@@ -3,10 +3,12 @@ import { Route } from "react-router-dom";
 import { LuShoppingCart } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
 import Banner from "./Banner";
+import Products from "./Products";
 
 const Navbar = () => {
   return (
-    <div className="bg-primary text-white h-[600px] rounded-lg">
+    <div className="bg-mainBg">
+      <div className="bg-primary text-white h-[600px] rounded-lg">
       <div className="navbar w-10/12 mx-auto shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
@@ -59,17 +61,22 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="flex gap-3">
-          <div className="bg-white rounded-full p-1">
-          <LuShoppingCart className="text-black font-thin cursor-pointer"></LuShoppingCart>
-          </div>
-          <div  className="bg-white rounded-full p-1">
-          <CiHeart className="text-black cursor-pointer"></CiHeart>
-          </div>
+            <div className="bg-white rounded-full p-1">
+              <LuShoppingCart className="text-black font-thin cursor-pointer"></LuShoppingCart>
+            </div>
+            <div className="bg-white rounded-full p-1">
+              <CiHeart className="text-black cursor-pointer"></CiHeart>
+            </div>
           </div>
         </div>
       </div>
       {/* banner */}
       <Banner></Banner>
+      <div className="w-10/12 mx-auto">
+        {/* produts */}
+        <Products></Products>
+      </div>
+    </div>
     </div>
   );
 };
